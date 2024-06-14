@@ -478,11 +478,22 @@ html{
     background-size: cover;
     }
     .presentacion__titulo {
-    font-size: var(--presentacion-titulo-tamanio-grande);
+    font-size: 3rem;
     }
     .articulo {
     height: max-content;
-    justify-content: flex-start;
+    }
+    .articulo__titulo{
+        font-size: 3rem;
+        padding: 50px;
+    }
+    .tarjeta__proyectos{
+        padding: 40px;
+    }
+    .contenedor_tarjetas_grid{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
     .tarjeta__contenido .boton {
     align-self: center;
@@ -492,7 +503,13 @@ html{
 @media (max-width: 1200px) {
     .presentacion__contenedor_info{
         justify-content: flex-end;
-
+        margin-top:120px ;
+    }
+    .presentacion__titulo{
+        margin-bottom: 0px;
+    }
+    .presentacion__parrafo{
+        margin: 20px;
     }
     .articulo__contenedor_descripciones {
     display: flex;
@@ -515,8 +532,12 @@ html{
 
 @media (max-width: 992px){
     .presentacion__contenedor_info{
-    
+    padding-top: 20px;
     }
+    .presentacion__titulo{
+        padding: 20px;
+    }
+
     .boton {
     width: 140px;
     }
@@ -528,13 +549,14 @@ html{
 
 @media (max-width: 768px) {
     .navegacion {
-    height: 100px;
     display: flex;
-    flex-direction: column;
-    background-color: var(--fondo-primario-transparente);
+    height: 100px;
+    flex-direction: wrap;
+    flex-wrap: wrap;
     }
     .presentacion__contenedor_info{
-        margin-top: 60px;
+    padding-top: 5%;
+    margin-top: 10px;
     }
     .enlaces {
     width: 80%;
@@ -546,8 +568,11 @@ html{
     width: 100%;
     }
     .articulo {
-    padding: 2rem;
-    overflow-x: hidden;
+    margin-top: 100px;
+    padding-top: 70px;
+    }
+    .articulo__titulo{
+        margin-top: 40px;
     }
     .tarjeta__contenido .boton {
     align-self: center;
@@ -561,20 +586,40 @@ html{
     flex-basis: 150px;
     width: 100%;
     }
+    .pie_de_pagina__copyright{
+    margin-top: 60px; 
+    }
 }
 
 @media (max-width: 576px) {
+    .navegacion{
+        display: flex;
+    }
     .presentacion__titulo {
-    font-size: var(--titulo-tamanio);
+    font-size: 3rem;
+    margin-top: 30%;
     }
     .presentacion__contenedor_info{
-        margin-top: 460px;
-        display: flex;
+        margin-top: 40%;
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
+    .presentacion_selfie_contenedor{
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .articulo{
+        padding: 10px;
+        padding-top: 80px;
+
+    }
+    .articulo__titulo{
+        padding: 5px;
+    }
+
     .presentacion__contenedor_botones {
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     }
     .seccion_descripcion {
