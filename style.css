@@ -165,8 +165,9 @@ html{
     font-size: 5rem;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    filter: drop-shadow(0px 3px 5px var(--fondo-primario-transparente));
+    filter: drop-shadow(0px 3px 5px var(--texto-primario));
     /* termina texto con degradez */
+
 
 } 
 
