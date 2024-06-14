@@ -54,7 +54,7 @@ html{
 }
 
 .navegacion {
-    height: 150px;
+    height: 130px;
     display: flex;
     justify-content: space-around;
     align-items: center;
