@@ -477,6 +477,10 @@ html{
     .presentacion {
     background-size: cover;
     }
+    .presentacion__contenedor_info{
+        margin-top:120px ;
+    }
+    
     .presentacion__titulo {
     font-size: 3rem;
     }
@@ -502,7 +506,6 @@ html{
 
 @media (max-width: 1200px) {
     .presentacion__contenedor_info{
-        justify-content: flex-end;
         margin-top:120px ;
     }
     .presentacion__titulo{
@@ -555,8 +558,8 @@ html{
     flex-wrap: wrap;
     }
     .presentacion__contenedor_info{
-    padding-top: 5%;
-    margin-top: 10px;
+    padding-top: 10%;
+    margin-top: 100px;
     }
     .enlaces {
     width: 80%;
@@ -597,10 +600,10 @@ html{
     }
     .presentacion__titulo {
     font-size: 3rem;
-    margin-top: 30%;
+    margin-top: 20%;
     }
     .presentacion__contenedor_info{
-        margin-top: 40%;
+        margin-top: 25%;
         flex-direction: column;
         text-align: center;
         padding: 0;
